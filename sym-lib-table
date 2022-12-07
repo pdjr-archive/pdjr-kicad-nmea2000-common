@@ -1,3 +1,3 @@
 (sym_lib_table
-  (lib (name pdjr)(type Legacy)(uri /home/preeve/Projects/git/pdjr-kicad-libraries/pdjr/modules/pdjr.lib)(options "")(descr ""))
+  (lib (name pdjr)(type Legacy)(uri ${USER_SYMBOL_DIR}/pdjr.lib)(options "")(descr ""))
 )
