@@ -734,7 +734,7 @@ Wire Wire Line
 Wire Wire Line
 	1200 6700 2350 6700
 Wire Wire Line
-	5950 7150 6400 7150
+	5950 7150 6050 7150
 Wire Wire Line
 	5150 7400 6350 7400
 Connection ~ 1400 7550
@@ -756,10 +756,8 @@ F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=1371"
 	1    5750 7250
 	-1   0    0    -1  
 $EndComp
-NoConn ~ 5950 7250
-NoConn ~ 5550 7150
 Wire Wire Line
-	5550 7250 5150 7250
+	5550 7250 5450 7250
 $Comp
 L Device:LED D18
 U 1 1 6399F1CF
@@ -1391,4 +1389,18 @@ NoConn ~ 1150 3100
 NoConn ~ 1150 3200
 NoConn ~ 1150 3300
 NoConn ~ 1150 3400
+Wire Wire Line
+	5950 7250 6050 7250
+Wire Wire Line
+	6050 7250 6050 7150
+Connection ~ 6050 7150
+Wire Wire Line
+	6050 7150 6400 7150
+Wire Wire Line
+	5550 7150 5450 7150
+Wire Wire Line
+	5450 7150 5450 7250
+Connection ~ 5450 7250
+Wire Wire Line
+	5450 7250 5150 7250
 $EndSCHEMATC
