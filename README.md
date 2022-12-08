@@ -39,6 +39,12 @@ a basis for implementing firmware which exploits this hardware.
 The PCB design is simply imported into a new KiCad project and then
 extended to provide the required application features.
 
-1. Create a new KiCad project.
-2. Download 
-2. Open pcbnew(1), choose FILE->MERGE and
+1. Open Kicad(1) and create a new project.
+
+2. Download MNEA2000-COMMON.kicad_pcb into the new project folder.
+
+3. Open pcbnew(1), choose FILE->MERGE, select the file you just
+   downloaded and save it as a the new project's PCB (if your KiCad
+   project is called blob.prj then save the file as blob.kicad_pcb).
+   
+4. 
