@@ -312,11 +312,11 @@ Wire Wire Line
 Wire Wire Line
 	10350 3800 10450 3800
 Text Label 8650 3300 2    50   ~ 0
-MPX_DATA
+LED_DATA
 Text Label 8650 3500 2    50   ~ 0
-MPX_CLOCK
+LED_CLOCK
 Text Label 8650 3800 2    50   ~ 0
-MPX_LATCH
+LED_LATCH
 Wire Wire Line
 	9250 4400 9250 4500
 Wire Wire Line
@@ -403,13 +403,13 @@ Wire Wire Line
 $Comp
 L Switch:SW_DIP_x08 SW2
 U 1 1 633236F9
-P 5750 5800
-F 0 "SW2" H 5750 6350 50  0000 C CNN
-F 1 "INSTANCE" H 5750 5350 50  0000 C CNN
-F 2 "Package_DIP:DIP-16_W7.62mm" H 5750 5800 50  0001 C CNN
-F 3 "~" H 5750 5800 50  0001 C CNN
-	1    5750 5800
-	-1   0    0    -1  
+P 6350 2000
+F 0 "SW2" H 6350 2550 50  0000 C CNN
+F 1 "INSTANCE" H 6350 1550 50  0000 C CNN
+F 2 "Package_DIP:DIP-16_W7.62mm" H 6350 2000 50  0001 C CNN
+F 3 "~" H 6350 2000 50  0001 C CNN
+	1    6350 2000
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	5150 5400 5150 5500
@@ -861,9 +861,9 @@ Wire Wire Line
 	10350 5500 10450 5500
 NoConn ~ 9650 5900
 Text Label 8650 5200 2    50   ~ 0
-MPX_CLOCK
+LED_CLOCK
 Text Label 8650 5500 2    50   ~ 0
-MPX_LATCH
+LED_LATCH
 Wire Wire Line
 	9250 6100 9250 6200
 Wire Wire Line
@@ -1118,9 +1118,9 @@ Connection ~ 10950 4000
 Wire Wire Line
 	10950 4000 10950 4500
 Text Label 9650 4200 0    50   ~ 0
-MPX_SER
+LED_SER
 Text Label 8650 5000 2    50   ~ 0
-MPX_SER
+LED_SER
 $Comp
 L Device:CP_Small C3
 U 1 1 634CCFDB
@@ -1164,41 +1164,25 @@ NoConn ~ 1150 2400
 Text Label 1150 2500 2    50   ~ 0
 PRG
 Text Label 2250 3600 0    50   ~ 0
-MPX_CLOCK
+LED_CLOCK
 Text Label 2250 3400 0    50   ~ 0
-MPX_DATA
-Text Label 2250 3100 0    50   ~ 0
-ADDR_7
-Text Label 2250 3000 0    50   ~ 0
-ADDR_6
-Text Label 2250 2900 0    50   ~ 0
-ADDR_5
-Text Label 2250 2800 0    50   ~ 0
-ADDR_4
-Text Label 2250 2700 0    50   ~ 0
-ADDR_3
-Text Label 2250 2600 0    50   ~ 0
-ADDR_2
-Text Label 2250 2500 0    50   ~ 0
-ADDR_1
-Text Label 2250 2400 0    50   ~ 0
-ADDR_0
+LED_DATA
 Text Label 2250 3500 0    50   ~ 0
-MPX_LATCH
+LED_LATCH
 Text Label 1150 2800 2    50   ~ 0
-CH6
+D17
 Text Label 1150 2900 2    50   ~ 0
-CH5
+D18
 Text Label 1150 3000 2    50   ~ 0
-CH4
+D19
 Text Label 1150 3100 2    50   ~ 0
-CH3
+D20
 Text Label 1150 3200 2    50   ~ 0
-CH2
+D21
 Text Label 1150 3300 2    50   ~ 0
-CH1
+D22
 Text Label 1150 3400 2    50   ~ 0
-CH0
+D23
 NoConn ~ 1500 2200
 NoConn ~ 1600 2200
 NoConn ~ 1700 2200
@@ -1380,7 +1364,7 @@ $EndComp
 Wire Wire Line
 	1150 3500 850  3500
 Text Label 1150 2700 2    50   ~ 0
-CH7
+D16
 NoConn ~ 1150 2700
 NoConn ~ 1150 2800
 NoConn ~ 1150 2900
@@ -1403,4 +1387,152 @@ Wire Wire Line
 Connection ~ 5450 7250
 Wire Wire Line
 	5450 7250 5150 7250
+Wire Wire Line
+	4100 1500 4000 1500
+Wire Wire Line
+	4600 1100 4150 1100
+$Comp
+L power:+3V3 #PWR?
+U 1 1 63A6B75E
+P 4150 1100
+F 0 "#PWR?" H 4150 950 50  0001 C CNN
+F 1 "+3V3" V 4150 1300 50  0000 C CNN
+F 2 "" H 4150 1100 50  0001 C CNN
+F 3 "" H 4150 1100 50  0001 C CNN
+	1    4150 1100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 63A6CC25
+P 3950 2600
+F 0 "#PWR?" H 3950 2350 50  0001 C CNN
+F 1 "GND" V 3950 2400 50  0000 C CNN
+F 2 "" H 3950 2600 50  0001 C CNN
+F 3 "" H 3950 2600 50  0001 C CNN
+	1    3950 2600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5100 1600 5200 1600
+Wire Wire Line
+	5100 1700 5200 1700
+Wire Wire Line
+	5100 1800 5200 1800
+Wire Wire Line
+	5100 1900 5200 1900
+Wire Wire Line
+	5100 2000 5200 2000
+Wire Wire Line
+	5100 2100 5200 2100
+Wire Wire Line
+	5100 2200 5200 2200
+Wire Wire Line
+	5100 2300 5200 2300
+Wire Wire Line
+	6750 2300 6650 2300
+Wire Wire Line
+	6750 2300 6750 2200
+Wire Wire Line
+	6750 2200 6650 2200
+Connection ~ 6750 2300
+Wire Wire Line
+	6750 2200 6750 2100
+Wire Wire Line
+	6750 2100 6650 2100
+Connection ~ 6750 2200
+Wire Wire Line
+	6750 2100 6750 2000
+Wire Wire Line
+	6750 2000 6650 2000
+Connection ~ 6750 2100
+Wire Wire Line
+	6750 2000 6750 1900
+Wire Wire Line
+	6750 1900 6650 1900
+Connection ~ 6750 2000
+Wire Wire Line
+	6750 1900 6750 1800
+Wire Wire Line
+	6750 1800 6650 1800
+Connection ~ 6750 1900
+Wire Wire Line
+	6750 1800 6750 1700
+Wire Wire Line
+	6750 1700 6650 1700
+Connection ~ 6750 1800
+Wire Wire Line
+	6750 1700 6750 1600
+Wire Wire Line
+	6750 1600 6650 1600
+Connection ~ 6750 1700
+$Comp
+L Device:CP_Small C?
+U 1 1 63C82001
+P 5150 1100
+F 0 "C?" V 5200 1200 50  0000 C CNN
+F 1 "100nF" V 5200 950 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 5150 1100 50  0001 C CNN
+F 3 "~" H 5150 1100 50  0001 C CNN
+	1    5150 1100
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	6750 1600 6750 1100
+Wire Wire Line
+	5900 1100 5250 1100
+Connection ~ 6750 1600
+Wire Wire Line
+	5050 1100 4600 1100
+Connection ~ 4600 1100
+Wire Wire Line
+	4600 1100 4600 1200
+$Comp
+L pdjr:74LS165 U?
+U 1 1 63F7C7A4
+P 4600 2100
+F 0 "U?" H 4850 2850 50  0000 C CNN
+F 1 "74LS165" H 4300 2850 50  0000 C CNN
+F 2 "" H 4600 2100 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/sn74ls165a.pdf" H 4600 2100 50  0001 C CNN
+	1    4600 2100
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 2600 5900 2550
+Wire Wire Line
+	6750 2600 6750 2300
+Wire Wire Line
+	3950 2600 4600 2600
+Connection ~ 4600 2600
+Text Label 4000 2000 2    50   ~ 0
+INSTANCE_CLOCK
+Text Label 4000 1500 2    50   ~ 0
+INSTANCE_SERIAL
+Wire Wire Line
+	4100 2000 4000 2000
+Text Label 4000 2100 2    50   ~ 0
+INSTANCE_CLOCK_ENABLE
+Wire Wire Line
+	4100 2100 4000 2100
+Text Label 4000 1800 2    50   ~ 0
+INSTANCE_LOAD
+Wire Wire Line
+	4100 1800 4000 1800
+Text Label 2250 2400 0    50   ~ 0
+INSTANCE_LOAD
+Text Label 2250 2500 0    50   ~ 0
+INSTANCE_CLOCK
+Text Label 2250 2600 0    50   ~ 0
+INSTANCE_SERIAL
+Text Label 2250 2700 0    50   ~ 0
+INSTANCE_CLOCK_ENABLE
+Text Label 2250 2800 0    50   ~ 0
+D8
+Text Label 2250 2900 0    50   ~ 0
+D7
+Text Label 2250 3000 0    50   ~ 0
+D6
+Text Label 2250 3100 0    50   ~ 0
+D5
 $EndSCHEMATC
