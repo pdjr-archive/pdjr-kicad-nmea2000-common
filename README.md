@@ -5,10 +5,10 @@ elements of an NMEA 2000 module based around the Teensy 4.0
 microcontroller.
 
 The PCB layout can be imported into other projects, relieving them of
-the effort of implementing the fundamental elements required to
+the effort of designing and implementing fundamental services which
 power, interface, configure and process most NMEA hardware devices.
-A project designer using the PCB can focus on just those elements of
-application design appropriate to their task in hand.
+A project designer using the PCB layout can focus on just those
+elements of application design appropriate to their task in hand.
 
 A parallel project
 [pdjr-nmea2000-common-firmware]()
