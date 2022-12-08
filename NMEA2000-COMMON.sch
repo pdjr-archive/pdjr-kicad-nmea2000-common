@@ -1123,8 +1123,6 @@ Text Label 9650 4200 0    50   ~ 0
 MPX_SER
 Text Label 8650 5000 2    50   ~ 0
 MPX_SER
-Text Label 1150 3500 2    50   ~ 0
-3V3
 $Comp
 L Device:CP_Small C3
 U 1 1 634CCFDB
@@ -1189,8 +1187,6 @@ Text Label 2250 2400 0    50   ~ 0
 ADDR_0
 Text Label 2250 3500 0    50   ~ 0
 MPX_LATCH
-Text Label 1150 2700 2    50   ~ 0
-CH7
 Text Label 1150 2800 2    50   ~ 0
 CH6
 Text Label 1150 2900 2    50   ~ 0
@@ -1372,4 +1368,27 @@ F 3 "" H 2850 5100 50  0001 C CNN
 	1    2850 5600
 	-1   0    0    -1  
 $EndComp
+$Comp
+L power:+3V3 #PWR0103
+U 1 1 639236D5
+P 850 3500
+F 0 "#PWR0103" H 850 3350 50  0001 C CNN
+F 1 "+3V3" H 865 3673 50  0000 C CNN
+F 2 "" H 850 3500 50  0001 C CNN
+F 3 "" H 850 3500 50  0001 C CNN
+	1    850  3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1150 3500 850  3500
+Text Label 1150 2700 2    50   ~ 0
+CH7
+NoConn ~ 1150 2700
+NoConn ~ 1150 2800
+NoConn ~ 1150 2900
+NoConn ~ 1150 3000
+NoConn ~ 1150 3100
+NoConn ~ 1150 3200
+NoConn ~ 1150 3300
+NoConn ~ 1150 3400
 $EndSCHEMATC
