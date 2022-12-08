@@ -320,14 +320,11 @@ LED_LATCH
 Wire Wire Line
 	9250 4400 9250 4500
 Wire Wire Line
-	9250 4500 8750 4500
-Wire Wire Line
 	8750 4500 8750 3900
 Wire Wire Line
 	8750 3900 8850 3900
 Wire Wire Line
 	8750 4500 8650 4500
-Connection ~ 8750 4500
 $Comp
 L power:GND #PWR024
 U 1 1 640FFD0C
@@ -361,9 +358,6 @@ F 3 "" H 8650 3000 50  0001 C CNN
 	1    8650 3000
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	10950 4500 9250 4500
-Connection ~ 9250 4500
 Wire Wire Line
 	8650 3300 8850 3300
 Wire Wire Line
@@ -1637,4 +1631,14 @@ NoConn ~ 2250 2800
 NoConn ~ 2250 2900
 NoConn ~ 2250 3000
 NoConn ~ 2250 3100
+Wire Wire Line
+	9250 4500 10950 4500
+Wire Wire Line
+	10950 4700 10950 4500
+Connection ~ 10950 4700
+Connection ~ 10950 4500
+Wire Wire Line
+	9250 4500 8750 4500
+Connection ~ 9250 4500
+Connection ~ 8750 4500
 $EndSCHEMATC
