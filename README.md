@@ -45,28 +45,25 @@ Microocontroller connections are level shifted to 3.3V
 ### Configuration interface
 
 The configuration interface consists of an SPST momentary tactile
-switch (PRG) and an 8-position DIL switch (INSTANCE). PRG is directly
-connected to GPIO D14 and is active low (GPIO D14 should be configured
-with INPUT_PULLUP). INSTANCE channels are pulled high to 3.3V and are
-thus active low. and are connected to the parallel inputs of a PISO buffer with
-the buffer interface connected to GPIO D10, D11 and D12.
+switch (PRG) and an 8-position DIL switch (INSTANCE).
 
-A 5VDC, 400mA, module power supply driven from the host NMEA bus.
-   
-2. A CAN interface between the host NMEA bus and the Teensy 4.0
-   microcontroller.
-   
-3. A user configuration interface consisting of a 8-position DIL
-   switch and SPST push button. As a minimum this allows the
-   configuration of the module instance address required by many
-   NMEA devices.
-   
-4. A user display interface consisting of up to 17 LEDs. Typically
-   one LED will be used to report NMEA connection status and other
-   LEDs will have some application specific role.
-   
-5. A Teensy 4.0 microcontroller with 13 GPIO pins available for
-   application use.
+PRG is directly connected to GPIO D14 and is active low (GPIO D14
+should be configured with INPUT_PULLUP).
+
+INSTANCE channels are pulled low to 3.3V and connected to the
+parallel inputs of a PISO buffer with the buffer interface connected
+to GPIO D10, D11 and D12.
+
+### Display interface
+
+The display interface consists of a single TRANSMIT_LED and up to 16
+additional LEDs that can be used for the presentation of application
+specific status.
+
+TRANSMIT_LED is driven directly by GPIO D15.
+
+The status LEDs are driven at 5VDC by a SIPO buffer with the buffer
+interface connected to GPIO D0, D1 and D2.
    
 ## How to use this PCB design as the basis for a new project
 
