@@ -1323,17 +1323,6 @@ Wire Wire Line
 	8850 2800 8850 2350
 Wire Wire Line
 	10650 850  11000 850 
-$Comp
-L power:+5V #PWR0105
-U 1 1 63D83162
-P 8150 850
-F 0 "#PWR0105" H 8150 700 50  0001 C CNN
-F 1 "+5V" V 8150 1000 50  0000 L CNN
-F 2 "" H 8150 850 50  0001 C CNN
-F 3 "" H 8150 850 50  0001 C CNN
-	1    8150 850 
-	0    -1   -1   0   
-$EndComp
 Connection ~ 9450 2050
 Wire Wire Line
 	9350 1350 10150 1350
@@ -1496,8 +1485,6 @@ Wire Wire Line
 	2100 5950 2100 6450
 Wire Wire Line
 	2100 5950 3050 5950
-Wire Notes Line
-	4050 850  8400 850 
 Wire Notes Line
 	7450 550  11150 550 
 Wire Notes Line
@@ -1683,4 +1670,15 @@ Connection ~ 1400 3100
 Wire Wire Line
 	2800 3350 1250 3350
 Connection ~ 2800 3350
+$Comp
+L power:+3V3 #PWR?
+U 1 1 639764A6
+P 8150 850
+F 0 "#PWR?" H 8150 700 50  0001 C CNN
+F 1 "+3V3" V 8150 1100 50  0000 C CNN
+F 2 "" H 8150 850 50  0001 C CNN
+F 3 "" H 8150 850 50  0001 C CNN
+	1    8150 850 
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC
