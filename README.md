@@ -40,10 +40,12 @@ Output from the converter is filtered through a smooting capacitor.
 
 ### CAN interface
 
-An MCP-2551/IP CAN controller converts data on CAN-H/CAN-L to 5VDC
-signals suitable for microcontroller use. Provision is made for the
-inclusion of a switch-selectable 120 Ohm bus termination resistor.
-Microocontroller connections are level shifted to 3.3V
+An MCP-2551/IP CAN controller converts data on CAN-H/CAN-L to
+signals suitable for microcontroller use. The signals are
+level-shifted to 3.3VDC for compatability with the Teensy 4.0.
+
+A switch switch-selectable 120 Ohm bus termination resistor allows
+the module to be used as either an NMEA drop or terminal node.
 
 ### Configuration interface
 
@@ -53,15 +55,14 @@ switch (PRG) and an 8-position DIL switch (INSTANCE).
 PRG is directly connected to GPIO D14 and is active low (GPIO D14
 should be configured with INPUT_PULLUP).
 
-INSTANCE channels are pulled low to 3.3V and connected to the
-parallel inputs of a PISO buffer with the buffer interface connected
-to GPIO D10, D11 and D12.
+INSTANCE channels are pulled low, active high, and connected to the
+parallel inputs of a PISO buffer interfaced through GPIO D10, D11
+and D12.
 
 ### Display interface
 
 The display interface consists of a single TRANSMIT_LED and up to 16
-additional LEDs that can be used for the presentation of application
-specific status.
+additional status LEDs for use by the host application.
 
 TRANSMIT_LED is driven directly by GPIO D15.
 
