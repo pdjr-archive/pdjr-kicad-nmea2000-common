@@ -47,8 +47,8 @@ Microocontroller connections are level shifted to 3.3V
 The configuration interface consists of an SPST momentary tactile
 switch (PRG) and an 8-position DIL switch (INSTANCE). PRG is directly
 connected to GPIO D14 and is active low (GPIO D14 should be configured
-with INPUT_PULLUP). INSTANCE channels are pulled high (active when
-low) and are connected to the parallel inputs of a PISO buffer with
+with INPUT_PULLUP). INSTANCE channels are pulled high to 3.3V and are
+thus active low. and are connected to the parallel inputs of a PISO buffer with
 the buffer interface connected to GPIO D10, D11 and D12.
 
 A 5VDC, 400mA, module power supply driven from the host NMEA bus.
