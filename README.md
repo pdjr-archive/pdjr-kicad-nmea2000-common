@@ -29,20 +29,29 @@ modules.
 
 ### Power supply
 
-A TMR-2-2211 DC-DC coverter converts bus power on NET-S/NET-C to a
-5VDC 400mA supply for the PCB. The converter power supply line is
-protected by a 0.25A self-resetting polymer fuse selected on the
-assumption of a 12VDC bus voltage. Output from the converter is
-filtered through a smooting capacitor.
+A TMR-2-2211 DC-DC converter takes bus power from NET-S/NET-C and
+outputs a 5VDC 400mA supply for the PCB. The converter power supply
+input is protected by a 0.25A self-resetting polymer fuse (selected
+on the assumption of a 12VDC bus voltage). Output from the converter
+is filtered through a smooting capacitor.
 
 ### CAN interface
 
 An MCP-2551/IP CAN controller converts data on CAN-H/CAN-L to 5VDC
 signals suitable for microcontroller use. Provision is made for the
 inclusion of a switch-selectable 120 Ohm bus termination resistor.
-Microocontroller connections are dropped to 3.3V
+Microocontroller connections are level shifted to 3.3V
 
-1. A 5VDC, 400mA, module power supply driven from the host NMEA bus.
+### Configuration interface
+
+The configuration interface consists of an SPST momentary tactile
+switch (PRG) and an 8-position DIL switch (INSTANCE). PRG is directly
+connected to GPIO D14 and is active low (GPIO D14 should be configured
+with INPUT_PULLUP). INSTANCE channels are pulled high (active when
+low) and are connected to the parallel inputs of a PISO buffer with
+the buffer interface connected to GPIO D10, D11 and D12.
+
+A 5VDC, 400mA, module power supply driven from the host NMEA bus.
    
 2. A CAN interface between the host NMEA bus and the Teensy 4.0
    microcontroller.
