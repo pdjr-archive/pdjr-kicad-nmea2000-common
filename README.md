@@ -29,11 +29,14 @@ modules.
 
 ### Power supply
 
-A TMR-2-2211 DC-DC converter takes bus power from NET-S/NET-C and
-outputs a 5VDC 400mA supply for the PCB. The converter power supply
-input is protected by a 0.25A self-resetting polymer fuse (selected
-on the assumption of a 12VDC bus voltage). Output from the converter
-is filtered through a smooting capacitor.
+A TMR-2-2411 DC-DC converter takes bus power from NET-S/NET-C and
+outputs a 5VDC 400mA supply for the PCB.
+
+The converter power supply input is protected by a 0.25A
+self-resetting polymer fuse selected on the assumption of a 12VDC
+bus voltage.
+
+Output from the converter is filtered through a smooting capacitor.
 
 ### CAN interface
 
