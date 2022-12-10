@@ -15,7 +15,32 @@ A parallel project
 provides a C++ pattern and associated libraries that can be used as
 a basis for implementing firmware which exploits this hardware.
 
-## Features of the hardware design
+## Design elements
+
+### PCB
+
+The double-sided PCB is suitable for use in a *** case and employs
+both surface-mount and through-hole components.
+
+### Microcontroller
+
+The project supports both Teensy 3.2 and Teensy 4.0 microcontroller
+modules.
+
+### Power supply
+
+A TMR-2-2211 DC-DC coverter converts bus power on NET-S/NET-C to a
+5VDC 400mA supply for the PCB. The converter power supply line is
+protected by a 0.25A self-resetting polymer fuse selected on the
+assumption of a 12VDC bus voltage. Output from the converter is
+filtered through a smooting capacitor.
+
+### CAN interface
+
+An MCP-2551/IP CAN controller converts data on CAN-H/CAN-L to 5VDC
+signals suitable for microcontroller use. Provision is made for the
+inclusion of a switch-selectable 120 Ohm bus termination resistor.
+Microocontroller connections are dropped to 3.3V
 
 1. A 5VDC, 400mA, module power supply driven from the host NMEA bus.
    
