@@ -333,7 +333,6 @@ F 3 "~" H 10550 1750 50  0001 C CNN
 	1    10550 1750
 	1    0    0    -1  
 $EndComp
-Connection ~ 8450 3450
 Text Label 10150 2500 2    50   ~ 0
 PRG
 $Comp
@@ -640,7 +639,6 @@ Wire Wire Line
 	10000 5850 10400 5850
 Wire Wire Line
 	10300 5950 10400 5950
-Connection ~ 8450 4950
 $Comp
 L Device:CP_Small C2
 U 1 1 6399F239
@@ -818,7 +816,7 @@ NoConn ~ 3400 4550
 NoConn ~ 3500 4550
 NoConn ~ 3600 4550
 $Comp
-L pdjr:Teensy_3.2 U5
+L NMEA2000-COMMON-rescue:Teensy_3.2-pdjr U5
 U 1 1 60F2AB82
 P 4150 6050
 F 0 "U5" H 4300 4500 50  0000 C CNN
@@ -920,7 +918,7 @@ CAN_L
 Text Notes 5250 1400 0    50   ~ 0
 CAN_SCR
 $Comp
-L pdjr:TMR-2-2411 U2
+L NMEA2000-COMMON-rescue:TMR-2-2411-pdjr U2
 U 1 1 63A71732
 P 3500 1150
 F 0 "U2" H 3500 1500 50  0000 C CNN
@@ -1016,7 +1014,7 @@ Connection ~ 8450 850
 Wire Wire Line
 	8450 850  8450 950 
 $Comp
-L pdjr:74LS165 U101
+L NMEA2000-COMMON-rescue:74LS165-pdjr U101
 U 1 1 63F7C7A4
 P 8450 1850
 F 0 "U101" H 8300 2600 50  0000 C CNN
@@ -1558,10 +1556,7 @@ Wire Wire Line
 Wire Wire Line
 	7550 5700 8050 5700
 Wire Wire Line
-	8450 3450 11000 3450
-Wire Wire Line
 	7850 5000 7850 4950
-Connection ~ 7850 4950
 Wire Wire Line
 	7850 5200 7850 6250
 Connection ~ 7850 6250
@@ -1602,18 +1597,9 @@ Wire Wire Line
 Wire Wire Line
 	8850 5950 10000 5950
 Wire Wire Line
-	8450 4950 11000 4950
-Wire Wire Line
 	8450 4750 11000 4750
 Wire Wire Line
-	11000 3450 11000 3750
-Connection ~ 11000 3750
-Wire Wire Line
 	11000 3750 11000 3850
-Wire Wire Line
-	8350 4950 8450 4950
-Wire Wire Line
-	7850 4950 8450 4950
 Connection ~ 11000 3850
 Wire Wire Line
 	11000 3850 11000 3950
@@ -1635,13 +1621,6 @@ Wire Wire Line
 Connection ~ 11000 4450
 Wire Wire Line
 	11000 4450 11000 4750
-Connection ~ 11000 4750
-Wire Wire Line
-	11000 4750 11000 4950
-Connection ~ 11000 4950
-Wire Wire Line
-	11000 4950 11000 5250
-Connection ~ 11000 5250
 Wire Wire Line
 	11000 5250 11000 5350
 Connection ~ 11000 5350
@@ -1717,4 +1696,7 @@ $EndComp
 Wire Wire Line
 	3000 950  2650 950 
 Connection ~ 2650 950 
+Wire Wire Line
+	7850 4950 8450 4950
+Connection ~ 7850 4950
 $EndSCHEMATC

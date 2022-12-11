@@ -1,3 +1,0 @@
-(sym_lib_table
-  (lib (name pdjr)(type Legacy)(uri ${USER_SYMBOL_DIR}/pdjr.lib)(options "")(descr ""))
-)
