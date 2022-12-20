@@ -261,11 +261,11 @@ Wire Wire Line
 Wire Wire Line
 	10300 4250 10400 4250
 Text Label 7550 3750 2    50   ~ 0
-LED_DATA
+SIPO_DATA
 Text Label 7550 4000 2    50   ~ 0
-LED_CLOCK
+SIPO_CLOCK
 Text Label 7550 4200 2    50   ~ 0
-LED_LATCH
+SIPO_LATCH
 Wire Wire Line
 	8450 4650 8450 4750
 $Comp
@@ -569,9 +569,9 @@ Wire Wire Line
 Wire Wire Line
 	10300 5750 10400 5750
 Text Label 7550 5500 2    50   ~ 0
-LED_CLOCK
+SIPO_CLOCK
 Text Label 7550 5700 2    50   ~ 0
-LED_LATCH
+SIPO_LATCH
 Wire Wire Line
 	8450 6150 8450 6250
 Wire Wire Line
@@ -793,11 +793,11 @@ NoConn ~ 3050 4750
 Text Label 3050 4850 2    50   ~ 0
 PRG
 Text Label 4150 5750 0    50   ~ 0
-LED_CLOCK
+SIPO_CLOCK
 Text Label 4150 5950 0    50   ~ 0
-LED_DATA
+SIPO_DATA
 Text Label 4150 5850 0    50   ~ 0
-LED_LATCH
+SIPO_LATCH
 Text Label 3050 5150 2    50   ~ 0
 D17
 Text Label 3050 5250 2    50   ~ 0
@@ -1025,17 +1025,17 @@ F 3 "https://www.ti.com/lit/ds/symlink/sn74ls165a.pdf" H 8450 1850 50  0001 C CN
 	-1   0    0    -1  
 $EndComp
 Text Label 7550 1750 2    50   ~ 0
-INSTANCE_CP
+PISO_CP
 Text Label 7550 1250 2    50   ~ 0
-INSTANCE_Q7
+PISO_Q7
 Text Label 7550 1550 2    50   ~ 0
-INSTANCE_PL
+PISO_PL
 Text Label 4150 4850 0    50   ~ 0
-INSTANCE_PL
+PISO_PL
 Text Label 4150 4750 0    50   ~ 0
-INSTANCE_CP
+PISO_CP
 Text Label 4150 4950 0    50   ~ 0
-INSTANCE_Q7
+PISO_Q7
 Text Label 4150 5050 0    50   ~ 0
 D9
 Text Label 4150 5150 0    50   ~ 0
