@@ -798,20 +798,6 @@ Text Label 4150 5950 0    50   ~ 0
 SIPO_DATA
 Text Label 4150 5850 0    50   ~ 0
 SIPO_LATCH
-Text Label 3050 5150 2    50   ~ 0
-D17
-Text Label 3050 5250 2    50   ~ 0
-D18
-Text Label 3050 5350 2    50   ~ 0
-D19
-Text Label 3050 5450 2    50   ~ 0
-D20
-Text Label 3050 5550 2    50   ~ 0
-D21
-Text Label 3050 5650 2    50   ~ 0
-D22
-Text Label 3050 5750 2    50   ~ 0
-D23
 NoConn ~ 3400 4550
 NoConn ~ 3500 4550
 NoConn ~ 3600 4550
@@ -931,26 +917,14 @@ $EndComp
 $Comp
 L power:+3V3 #PWR0103
 U 1 1 639236D5
-P 2750 5850
-F 0 "#PWR0103" H 2750 5700 50  0001 C CNN
-F 1 "+3V3" H 2765 6023 50  0000 C CNN
-F 2 "" H 2750 5850 50  0001 C CNN
-F 3 "" H 2750 5850 50  0001 C CNN
-	1    2750 5850
-	1    0    0    -1  
+P 2650 5850
+F 0 "#PWR0103" H 2650 5700 50  0001 C CNN
+F 1 "+3V3" H 2665 6023 50  0000 C CNN
+F 2 "" H 2650 5850 50  0001 C CNN
+F 3 "" H 2650 5850 50  0001 C CNN
+	1    2650 5850
+	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	3050 5850 2750 5850
-Text Label 3050 5050 2    50   ~ 0
-D16
-NoConn ~ 3050 5050
-NoConn ~ 3050 5150
-NoConn ~ 3050 5250
-NoConn ~ 3050 5350
-NoConn ~ 3050 5450
-NoConn ~ 3050 5550
-NoConn ~ 3050 5650
-NoConn ~ 3050 5750
 Wire Wire Line
 	10350 2600 10250 2600
 Wire Wire Line
@@ -1036,20 +1010,6 @@ Text Label 4150 4750 0    50   ~ 0
 PISO_CP
 Text Label 4150 4950 0    50   ~ 0
 PISO_Q7
-Text Label 4150 5050 0    50   ~ 0
-D9
-Text Label 4150 5150 0    50   ~ 0
-D8
-Text Label 4150 5250 0    50   ~ 0
-D7
-Text Label 4150 5350 0    50   ~ 0
-D6
-Text Label 4150 5450 0    50   ~ 0
-D5
-NoConn ~ 4150 5150
-NoConn ~ 4150 5250
-NoConn ~ 4150 5350
-NoConn ~ 4150 5450
 Connection ~ 8450 4750
 Connection ~ 11000 2600
 Wire Wire Line
@@ -1122,7 +1082,6 @@ Wire Notes Line
 Connection ~ 7650 2800
 Wire Wire Line
 	7650 2800 7550 2800
-NoConn ~ 4150 5050
 $Comp
 L Transistor_FET:BSS138 Q1
 U 1 1 639591C7
@@ -1699,4 +1658,123 @@ Connection ~ 2650 950
 Wire Wire Line
 	7850 4950 8450 4950
 Connection ~ 7850 4950
+Wire Wire Line
+	2650 5850 3050 5850
+NoConn ~ 3050 5050
+NoConn ~ 3050 5150
+NoConn ~ 3050 5250
+NoConn ~ 3050 5350
+NoConn ~ 3050 5450
+NoConn ~ 3050 5550
+NoConn ~ 3050 5650
+NoConn ~ 3050 5750
+NoConn ~ 4150 5150
+NoConn ~ 4150 5250
+NoConn ~ 4150 5350
+NoConn ~ 4150 5450
+Text GLabel 6050 5200 2    50   BiDi ~ 0
+D9
+NoConn ~ 4150 5050
+Text GLabel 6050 5100 2    50   BiDi ~ 0
+D8
+Text GLabel 6050 5000 2    50   BiDi ~ 0
+D7
+Text GLabel 6050 4900 2    50   BiDi ~ 0
+D6
+Text GLabel 6050 4800 2    50   BiDi ~ 0
+D5
+Text GLabel 6050 5300 2    50   BiDi ~ 0
+D16
+Text GLabel 6050 5400 2    50   BiDi ~ 0
+D17
+Text GLabel 6050 5500 2    50   BiDi ~ 0
+D18
+Text GLabel 6050 5600 2    50   BiDi ~ 0
+D19
+Text GLabel 6050 5700 2    50   BiDi ~ 0
+D20
+Text GLabel 6050 5800 2    50   BiDi ~ 0
+D21
+Text GLabel 6050 5900 2    50   BiDi ~ 0
+D22
+Text GLabel 6050 6000 2    50   BiDi ~ 0
+D23
+Text Label 4150 5050 0    50   ~ 0
+D9
+Wire Wire Line
+	6050 4800 5950 4800
+Wire Wire Line
+	6050 4900 5950 4900
+Wire Wire Line
+	6050 5000 5950 5000
+Wire Wire Line
+	6050 5100 5950 5100
+Wire Wire Line
+	6050 5200 5950 5200
+Wire Wire Line
+	6050 5300 5950 5300
+Wire Wire Line
+	6050 5400 5950 5400
+Wire Wire Line
+	6050 5500 5950 5500
+Wire Wire Line
+	6050 5600 5950 5600
+Wire Wire Line
+	6050 5700 5950 5700
+Wire Wire Line
+	6050 5800 5950 5800
+Wire Wire Line
+	6050 5900 5950 5900
+Wire Wire Line
+	6050 6000 5950 6000
+Text Label 5950 5200 2    50   ~ 0
+D9
+Text Label 4150 5150 0    50   ~ 0
+D8
+Text Label 5950 5100 2    50   ~ 0
+D8
+Text Label 4150 5250 0    50   ~ 0
+D7
+Text Label 5950 5000 2    50   ~ 0
+D7
+Text Label 4150 5350 0    50   ~ 0
+D6
+Text Label 5950 4900 2    50   ~ 0
+D6
+Text Label 4150 5450 0    50   ~ 0
+D5
+Text Label 5950 4800 2    50   ~ 0
+D5
+Text Label 3050 5050 2    50   ~ 0
+D16
+Text Label 5950 5300 2    50   ~ 0
+D16
+Text Label 3050 5150 2    50   ~ 0
+D17
+Text Label 5950 5400 2    50   ~ 0
+D17
+Text Label 5950 5500 2    50   ~ 0
+D18
+Text Label 5950 5600 2    50   ~ 0
+D19
+Text Label 5950 5700 2    50   ~ 0
+D20
+Text Label 5950 5800 2    50   ~ 0
+D21
+Text Label 5950 5900 2    50   ~ 0
+D22
+Text Label 5950 6000 2    50   ~ 0
+D23
+Text Label 3050 5250 2    50   ~ 0
+D18
+Text Label 3050 5350 2    50   ~ 0
+D19
+Text Label 3050 5450 2    50   ~ 0
+D20
+Text Label 3050 5550 2    50   ~ 0
+D21
+Text Label 3050 5650 2    50   ~ 0
+D22
+Text Label 3050 5750 2    50   ~ 0
+D23
 $EndSCHEMATC
